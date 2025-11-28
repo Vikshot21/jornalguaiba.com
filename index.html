@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jornal Guaíba | Página inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #a30000, #6d0000);
+      color: white;
+    }
+    .main-banner img {
+      width: 80px;
+    }
+    .match-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff004f;
+      background: rgba(255 255 255 / 0.2);
+    }
+    .carrossel-track {
+      display: flex;
+      gap: 10px;
+      animation: deslizar 15s linear infinite;
+    }
+    .carrossel-track img {
+      height: 299px;
+      width: 219px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    @keyframes deslizar {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .tabela-classificacao table {
+      background-color: transparent !important;
+    }
+    .tabela-classificacao table td {
+      background-color: transparent !important;
+      color: white;
+    }
+    .tabela-classificacao table tbody tr:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+    .tabela-classificacao table tbody tr.highlight {
+      transform: scale(1.1);
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<header class="py-3 text-center">
+  <a href="#"><img class="img-fluid" src="img/logojornalguaiba.png" alt="Logo do Jornal Guaíba" style="max-width: 150px;"></a>
+</header>
+
+<nav class="d-flex justify-content-center flex-wrap gap-3 py-2" style="background: linear-gradient(to bottom, #a30000, #6d0000);">
+  <a href="index2.html" class="text-white fw-bold text-decoration-none">Jogos</a>
+  <a href="index3.html" class="text-white fw-bold text-decoration-none">Elenco Masculino</a>
+  <a href="index4.html" class="text-white fw-bold text-decoration-none">Classificação</a>
+  <a href="index5.html" class="text-white fw-bold text-decoration-none">Sócios</a>
+</nav>
+
+<section class="main-banner text-center py-5">
+  <img src="img/Interpng.png" alt="Escudo do Internacional" class="mb-3">
+  <h1 class="fw-bold">S.C. INTERNACIONAL</h1>
+</section>
+
+<section class="overflow-hidden px-2">
+  <div class="carrossel-track">
+    <img src="img/Milhoesnaconta.png">
+    <img src="img/Vairenovar.png">
+    <img src="img/Taonoradar.png">
+    <img src="img/cade.png">
+    <img src="img/Pesadelo.png">
+    <img src="img/z4.png">
+    <img src="img/Milhoesnaconta.png">
+    <img src="img/Vairenovar.png">
+    <img src="img/Taonoradar.png">
+    <img src="img/cade.png">
+    <img src="img/Pesadelo.png">
+    <img src="img/z4.png">
+  </div>
+</section>
+
+<section class="d-flex flex-wrap justify-content-center gap-3 py-4" style="background: linear-gradient(to bottom, #a30000, #6d0000);">
+  <div class="card match-card text-center text-white p-2" style="width: 110px; background: rgba(255 255 255 / 0.1); transition: transform 0.3s, box-shadow 0.3s;">
+    <div class="d-flex justify-content-around mb-2">
+      <img src="https://s.sde.globo.com/media/organizations/2018/03/10/atletico-mg.svg" width="36" height="36">
+      <img src="https://images.seeklogo.com/logo-png/13/2/sport-club-internacional-de-porto-alegre-logo-png_seeklogo-130665.png" width="36" height="36">
+    </div>
+    <p class="fw-bold mb-1">2 - 0 <small class="d-block fw-normal opacity-75">Arena MRV</small></p>
+    <p class="mb-1">Último jogo</p>
+    <p class="mb-0" style="font-size: 0.8rem;">12.06 - Brasileirão</p>
+  </div>
+  <div class="card match-card text-center text-white p-2" style="width: 110px; background: rgba(255 255 255 / 0.1); transition: transform 0.3s, box-shadow 0.3s;">
+    <div class="d-flex justify-content-around mb-2">
+      <img src="https://images.seeklogo.com/logo-png/13/2/sport-club-internacional-de-porto-alegre-logo-png_seeklogo-130665.png" width="36" height="36">
+      <img src="https://s.sde.globo.com/media/organizations/2024/04/09/escudo-vitoria-svg-69281.svg" width="36" height="36">
+    </div>
+    <p class="fw-bold mb-1">- <small class="d-block fw-normal opacity-75">Beira-Rio</small></p>
+    <p class="mb-1">Próx. jogo</p>
+    <p class="mb-0" style="font-size: 0.8rem;">12.07 - Brasileirão</p>
+  </div>
+  <div class="card match-card text-center text-white p-2" style="width: 110px; background: rgba(255 255 255 / 0.1); transition: transform 0.3s, box-shadow 0.3s;">
+    <div class="d-flex justify-content-around mb-2">
+      <img src="https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg" width="36" height="36">
+      <img src="https://images.seeklogo.com/logo-png/13/2/sport-club-internacional-de-porto-alegre-logo-png_seeklogo-130665.png" width="36" height="36">
+    </div>
+    <p class="fw-bold mb-1">- <small class="d-block fw-normal opacity-75">Fonte Nova</small></p>
+    <p class="mb-1">Jogo adiado</p>
+    <p class="mb-0" style="font-size: 0.8rem;">A definir</p>
+  </div>
+</section>
+
+<section class="tabela-classificacao my-4 mx-auto text-center p-3" style="max-width: 650px; font-size: 0.8rem; overflow-x: auto; border-radius: 8px; background: linear-gradient(to bottom, #a30000, #6d0000);">
+  <h2 class="mb-3 d-flex justify-content-center align-items-center gap-2">
+    <img src="https://www.ogol.com.br/img/logos/edicoes/184443_imgbank_.png" style="width:20px;">
+    Classificação - Rodada 12
+  </h2>
+  <table class="table table-borderless text-white mb-0 bg-transparent">
+    <thead>
+      <tr>
+        <th>Posição</th>
+        <th>Clube</th>
+        <th>Pontos</th>
+        <th>Jogos</th>
+        <th>Vitórias</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td class="fw-bold">Flamengo</td><td>24</td><td>11</td><td>7</td></tr>
+      <tr><td>2</td><td class="fw-bold">Cruzeiro</td><td>24</td><td>12</td><td>7</td></tr>
+      <tr><td>3</td><td class="fw-bold">RB Bragantino</td><td>23</td><td>12</td><td>7</td></tr>
+      <tr><td>4</td><td class="fw-bold">Palmeiras</td><td>22</td><td>11</td><td>7</td></tr>
+      <tr><td>5</td><td class="fw-bold">Bahia</td><td>21</td><td>12</td><td>6</td></tr>
+      <tr><td>6</td><td class="fw-bold">Fluminense</td><td>20</td><td>11</td><td>6</td></tr>
+      <tr><td>7</td><td class="fw-bold">Atlético-MG</td><td>20</td><td>12</td><td>5</td></tr>
+      <tr><td>8</td><td class="fw-bold">Botafogo</td><td>18</td><td>11</td><td>5</td></tr>
+      <tr><td>9</td><td class="fw-bold">Mirassol</td><td>17</td><td>11</td><td>4</td></tr>
+      <tr><td>10</td><td class="fw-bold">Corinthians</td><td>16</td><td>12</td><td>4</td></tr>
+      <tr><td>11</td><td class="fw-bold">Grêmio</td><td>16</td><td>12</td><td>4</td></tr>
+      <tr><td>12</td><td class="fw-bold">Ceará</td><td>15</td><td>11</td><td>4</td></tr>
+      <tr><td>13</td><td class="fw-bold">Vasco da Gama</td><td>13</td><td>12</td><td>4</td></tr>
+      <tr><td>14</td><td class="fw-bold">São Paulo</td><td>12</td><td>12</td><td>2</td></tr>
+      <tr><td>15</td><td class="fw-bold">Santos FC</td><td>11</td><td>12</td><td>3</td></tr>
+      <tr><td>16</td><td class="fw-bold">Vitória</td><td>11</td><td>12</td><td>2</td></tr>
+      <tr class="highlight"><td>17</td><td class="fw-bold"><strong>Internacional</strong></td><td>11</td><td>12</td><td>2</td></tr>
+      <tr><td>18</td><td class="fw-bold">Fortaleza</td><td>10</td><td>12</td><td>2</td></tr>
+      <tr><td>19</td><td class="fw-bold">Juventude</td><td>8</td><td>11</td><td>2</td></tr>
+      <tr><td>20</td><td class="fw-bold">Sport Recife</td><td>3</td><td>11</td><td>0</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="text-center py-4" style="background: linear-gradient(to bottom, #6d0000, #a30000); color: white;">
+  <div class="d-inline-flex align-items-center gap-3 mb-2">
+    <a href="https://facebook.com/scinternacional" target="_blank"><img src="img/Facebook.png"></a>
+    <a href="https://instagram.com/scinternacional" target="_blank"><img src="img/Instagram.png"></a>
+    <a href="https://twitter.com/scinternacional" target="_blank"><img src="img/X.png"></a>
+    <a href="https://www.youtube.com/@scinternacional" target="_blank"><img src="img/Youtube.png"></a>
+    <a href="https://www.tiktok.com/@scinternacional" target="_blank"><img src="img/TikTok.png"></a>
+    <span>/SCINTERNACIONAL</span>
+  </div>
+  <p class="mb-0" style="font-size: 0.85rem;">&copy; 2025 Jornal Guaíba | Todos os direitos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
